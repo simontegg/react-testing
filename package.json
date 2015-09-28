@@ -1,0 +1,35 @@
+{
+  "name": "react-testing-with-jest",
+  "version": "1.0.0",
+  "description": "react tesing example",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t reactify index.js -o bundle.js",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahu-2015/react-testing-with-jest.git"
+  },
+  "author": "kahu-2015",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahu-2015/react-testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/kahu-2015/react-testing-with-jest#readme",
+  "devDependencies": {
+    "babel-jest": "^5.3.0",
+    "jest-cli": "^0.5.8",
+    "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "react": "^0.13.3"
+  }
+}
