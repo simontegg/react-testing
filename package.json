@@ -31,6 +31,7 @@
     "jest-cli": "^0.5.8",
     "mocha": "^2.3.3",
     "mocha-jsdom": "^1.0.0",
+    "node-list": "^3.0.0",
     "react-tools": "^0.13.3",
     "reactify": "^1.1.1",
     "smokestack": "^3.4.1",

@@ -15,8 +15,9 @@ module.exports = React.createClass({
   },
 
   render: function() {
+
     return (
-      <label>
+      <label id='checkbox'>
         <input
           type="checkbox"
           checked={this.state.isChecked}
