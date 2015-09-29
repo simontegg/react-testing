@@ -7,7 +7,7 @@
     "build": "browserify -t reactify index.js -o bundle.js",
     "jest": "jest",
     "mocha": "mocha --compilers .:mocha-tests/compiler.js mocha-tests/*test.js",
-    "tape": "browserify -t reactify tape-tests/*.js | smokestack | tap-spec"
+    "tape": "browserify -t reactify tape-tests/*.js | tap-closer | smokestack | tap-spec"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
@@ -32,9 +32,11 @@
     "mocha": "^2.3.3",
     "mocha-jsdom": "^1.0.0",
     "node-list": "^3.0.0",
+    "react-test-utils": "0.0.1",
     "react-tools": "^0.13.3",
     "reactify": "^1.1.1",
     "smokestack": "^3.4.1",
+    "tap-closer": "^1.0.0",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.0"
   },

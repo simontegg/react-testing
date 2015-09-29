@@ -1,7 +1,11 @@
-# react-testing-with-jest
+# Testing react components three different ways: Jest, Mocha and Tape
 
-run `npm install` to install dependencies
+`npm install` to install dependencies
 
-run `npm run build` to build the bundle.js file
+`npm run build` to build the bundle.js file
 
-run  `npm run test` to run tests
+`npm run jest` to run jest tests
+
+`npm run mocha` to run mocha tests
+
+`npm run tape` to run tape tests

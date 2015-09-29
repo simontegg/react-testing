@@ -1,3 +1,4 @@
+//using jest https://facebook.github.io/jest/docs/tutorial-react.html
 
 //tell jest to get a 'real' component. Otherwise it will use a basic 'mocked' version
 jest.dontMock('../src/checkbox.js')
@@ -7,8 +8,9 @@ describe('CheckboxWithLabel', function() {
 
     //put these inside the jest describe call
     var React = require('react/addons')
-    var Checkbox = require('../src/checkbox.js')
     var TestUtils = React.addons.TestUtils
+    var Checkbox = require('../src/checkbox.js')
+
 
     // Render a checkbox with label in the document
     var checkbox = TestUtils.renderIntoDocument(

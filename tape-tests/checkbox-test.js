@@ -1,6 +1,8 @@
-var test = require('tape')
+//using tape https://www.npmjs.com/package/tape
+
 var React = require('react/addons')
 var TestUtils = React.addons.TestUtils
+var test = require('tape')
 var Checkbox = require('../src/checkbox')
 
 test('Checkbox changes the text after click', function (t) {
@@ -17,7 +19,6 @@ test('Checkbox changes the text after click', function (t) {
   var msg0 = 'label renders as "' + data.labelOff + '"'
 
   t.equal(label.getDOMNode().textContent, data.labelOff, msg0)
-
 
   // Simulate a click and verify that it is now On
   var input = TestUtils.findRenderedDOMComponentWithTag(checkbox, 'input')

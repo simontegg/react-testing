@@ -1,3 +1,6 @@
+// using mocha http://jaketrent.com/post/testing-react-with-jsdom/
+// http://www.hammerlab.org/2015/02/14/testing-react-web-apps-with-mocha/
+
 var jsdom = require('mocha-jsdom')
 
 // Replace BigComplicatedComponent.js with a stub component.
@@ -6,13 +9,13 @@ var jsdom = require('mocha-jsdom')
 // ]
 
 var assert = require('assert')
-
+)
 describe('Checkbox', function() {
   jsdom()
   it('changes the text after click', function() {
     var React = require('react/addons')
-    var Checkbox = require('../src/checkbox')
     var TestUtils = React.addons.TestUtils
+    var Checkbox = require('../src/checkbox')
 
     // Render a checkbox with label in the document
     var checkbox = TestUtils.renderIntoDocument(
