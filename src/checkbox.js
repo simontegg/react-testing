@@ -1,6 +1,6 @@
 var React = require('react/addons')
 
-var CheckboxWithLabel = React.createClass({
+module.exports = React.createClass({
 
   propTypes: {
     label: React.PropTypes.string
@@ -27,5 +27,3 @@ var CheckboxWithLabel = React.createClass({
     )
   }
 })
-
-module.exports = CheckboxWithLabel
